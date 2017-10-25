@@ -29,7 +29,7 @@ app.post("/api/visitors", function (request, response) {
     if (err) {
       return console.log('[mydb.insert] ', err.message);
     }
-    response.send("Hello " + userName + "! I added you to the database.");
+    response.send("Hello " + userName + "! I added you to the database named mydb.");
   });
 });
 
